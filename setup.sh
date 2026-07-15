@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-pacman -Syy --needed git python terminus-font
+pacman -Syy --needed --noconfirm git python terminus-font
 echo "KEYMAP=us" > /etc/vconsole.conf
 echo "FONT=ter-132n" >> /etc/vconsole.conf
 
