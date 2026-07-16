@@ -53,7 +53,8 @@ echo "FONT=ter-p24n" >> /etc/vconsole.conf
 ufw enable
 systemctl enable ufw
 
-# system done; user next, no sudo priv
+# system done; user next
+# you could theoretically already `commit` the first part here
 
 pacman -S --needed --noconfirm \
 	seatd \
