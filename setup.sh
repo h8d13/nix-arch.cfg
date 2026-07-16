@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-# more simplistic setup made for my laptop
+# more simplistic setup made for VM testing -> laptop
+# laptop most of it is commented out
 # usually ive already set root pw at this step `passwd root`
+# and do the same for user after this script
 
 pacman -S --needed --noconfirm zram-generator ufw micro terminus-font
 
@@ -80,9 +82,15 @@ useradd -m hadean && usermod -aG seat hadean
 echo "exec sway" >> /home/hadean/.bash_profile
 
 # -m creates the home, -aG is standard for groups idek
-# all got left to do is passwd hadean from a root shell
 # plus probably some sound shenanigans
-# this has no sudo or anything the profile is just sway
+# this has no sudo or anything the profile is just sway basics
+
+pacman -S --needed --noconfirm \
+	vulkan-virtio
+	#intel-media-driver
+	#vulkan-intel
+	#linux-firmware
+	#iwctl
 
 chown -R hadean:hadean /home/hadean
 
