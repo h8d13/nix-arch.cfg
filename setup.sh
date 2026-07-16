@@ -45,7 +45,7 @@ fi
 
 echo "[zram0]" > /etc/systemd/zram-generator.conf
 echo "EDITOR=micro" >> /etc/environment
-echo "KEYMAP=be-latin1" >> /etc/vconsole.conf
+#echo "KEYMAP=be-latin1" >> /etc/vconsole.conf
 echo "FONT=ter-p24n" >> /etc/vconsole.conf
 
 ufw enable
@@ -77,8 +77,8 @@ systemctl --global enable pipewire.socket pipewire-pulse.socket wireplumber.serv
 
 useradd -m hadean && usermod -aG seat hadean
 
-echo "export XKB_DEFAULT_LAYOUT=be" >> /home/hadean/.bash_profile
-echo "export XKB_DEFAULT_VARIANT=nodeadkeys" >> /home/hadean/.bash_profile
+#echo "export XKB_DEFAULT_LAYOUT=be" >> /home/hadean/.bash_profile
+#echo "export XKB_DEFAULT_VARIANT=nodeadkeys" >> /home/hadean/.bash_profile
 echo "exec sway" >> /home/hadean/.bash_profile
 
 # -m creates the home, -aG is standard for groups idek
