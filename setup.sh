@@ -90,7 +90,7 @@ pacman -S --needed --noconfirm \
 	#intel-media-driver
 	#vulkan-intel
 	#linux-firmware
-	#iwctl
+	#iwd
 
 chown -R hadean:hadean /home/hadean
 
