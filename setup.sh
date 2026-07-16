@@ -88,4 +88,5 @@ echo "exec sway" >> /home/hadean/.bash_profile
 
 chown -R hadean:hadean /home/hadean
 
-# thats it folks not clone dotfiles; done?
+# thats it folks. not done?
+# clone dotfiles, symlink, done?
