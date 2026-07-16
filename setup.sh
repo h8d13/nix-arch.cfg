@@ -93,6 +93,8 @@ pacman -S --needed --noconfirm \
 	#linux-firmware
 	#iwd
 
+# ip link set wlan0 up
+
 chown -R hadean:hadean /home/hadean
 
 # thats it folks. not done?
