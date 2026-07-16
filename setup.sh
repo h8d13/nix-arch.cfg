@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
-# meant to be run as:
-# `bash <(curl -sSL <url>)`
+pacman -S --needed -noconfirm zram-generator git micro
 
-pacman -Syy || exit 1
-# refresh
-pacman -S --needed --noconfirm git python
-
-git clone https://github.com/h8d13/archinstoo && cd archinstoo
-./DEV --script live
+echo "[zram0]" > /etc/systemd/zram-generator.conf
+echo "EDITOR=micro" >> /etc/environment
