@@ -71,7 +71,7 @@ pacman -S --needed --noconfirm \
 	xorg-xwayland
 
 systemctl enable --now seatd
-systemctl --global enable pipewire-pulse.socket wireplumber.service
+systemctl --global enable pipewire-pulse wireplumber
 
 useradd -m hadean && usermod -aG seat hadean
 
