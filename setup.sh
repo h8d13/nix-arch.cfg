@@ -50,6 +50,8 @@ systemctl enable ufw
 pacman -S --needed --noconfirm seatd sway foot
 systemctl enable --now seatd
 useradd -m hadean && usermod -aG seat hadean
+echo "sway" > /home/hadean/.bash_profile
 # -m creates the home, -aG is standard for groups idek
 # all got left to do is passwd hadean from a root shell
 # plus probably some sound shenanigans
+# this has no sudo or anything the profile is just sway
