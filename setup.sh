@@ -3,6 +3,7 @@
 # laptop most of it is commented out
 # usually ive already set root pw at this step `passwd root`
 # and do the same for user after this script
+pacman -Syy || exit 1
 
 pacman -S --needed --noconfirm zram-generator ufw micro terminus-font
 
