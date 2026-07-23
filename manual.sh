@@ -48,12 +48,21 @@ echo "exec sway" >> /home/hadean/.bash_profile
 # plus probably some sound shenanigans
 # this has no sudo or anything the profile is just sway basics
 
+# vm
 pacman -S --needed --noconfirm \
 	vulkan-virtio
+
+	#linux-firmware
+	#latop
 	#intel-media-driver
 	#vulkan-intel
 	#linux-firmware
 	#iwd
+	#intel-ucode
+
+	#desktop (old nvidia card)
+	#vulkan-nouveau
+	#xf86-video-nouveau
 
 #mkdir -p /etc/iwd
 #printf '[General]\nEnableNetworkConfiguration=true\n\n[Network]\nNameResolvingService=systemd\n' | tee /etc/iwd/main.conf
